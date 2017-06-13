@@ -1,0 +1,19 @@
+{
+  "name": "mvp-alert-message",
+  "version": "1.0.0",
+  "description": "My first solo from scratch fullstack app!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "DRE",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.5",
+    "nodemon": "^1.11.0"
+  }
+}
