@@ -4,9 +4,13 @@ angular.module('App')
     scope: {},
     restrict: 'E',
     controller: function($http) {
+      this.mod = 'normal';
     	this.handleClick = function () {
-    		var data = this.input;
-    		$http.post('http://127.0.0.1:3000/message', JSON.stringify({data: data}), {
+    		$http.post('http://127.0.0.1:3000/message', JSON.stringify({
+            text: this.text, 
+            number: this.number, 
+            mod: this.mod
+          }), {
       			contentType: 'application/json'
       		})
       		.then(function (data) {

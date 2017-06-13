@@ -9,11 +9,20 @@
   "author": "DRE",
   "license": "ISC",
   "dependencies": {
+    "1337": "^1.0.1",
     "angular": "^1.6.4",
     "angular-ui-router": "^1.0.3",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "google-translate": "^2.0.5",
     "mongoose": "^4.10.5",
-    "nodemon": "^1.11.0"
+    "node-ermahgerd": "0.0.1",
+    "nodemon": "^1.11.0",
+    "piglatin": "^0.1.2",
+    "pirate-speak": "^1.0.1",
+    "robo-talk": "^1.0.1",
+    "twilio": "^3.3.0",
+    "yoda-speak": "^0.1.1"
   }
 }

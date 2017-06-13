@@ -2,7 +2,9 @@
 
 const express = require('express')
 const path = require('path')
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
+
+var helper = require('./helpers/helper');
 
 const app = express()
 
@@ -25,10 +27,12 @@ app.get('/history', function(req, res) {
 })
 
 app.post('/message', function(req, res) {
-  console.log(req.body.data);
   var newMessage = new Message({
   	user: 'Dwho',
-  	text: req.body.data
+  	text: req.body.text,
+    mod: req.body.mod,
+    modtext: helper.alterText(req.body.text, req.body.mod),
+    number: req.body.number
   });
   newMessage.save(function(err, newMessage) {
   	if (err) {
